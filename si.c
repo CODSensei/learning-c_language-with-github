@@ -3,12 +3,12 @@ int main() {
 
     float si,pl,rate,t;
     printf("\nEnter Principal :\t");
-    scanf('%f',&pl);
+    scanf("%f",&pl);
     printf("\nEnter Rate :\t");
-    scanf('%f',&rate);
+    scanf("%f",&rate);
     printf("\nEnter Time :\t");
-    scanf('%f',&t);
+    scanf("%f",&t);
     si=pl*rate*t/100;
-    printf("\nSimple Interest is %f",si);
+    printf("\nSimple Interest is %f\n",si);
     return 0;
 }
