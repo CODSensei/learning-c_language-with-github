@@ -4,9 +4,9 @@ int main() {
     for (i = -5; i <=-1; i++)
     {
         printf("\n");
-        for(k=i;k<=i;k++)
+        for(k=1;k<=i;k++)
         {
-            printf("");
+            printf(" ");
         }
         
         for (j = i; j <=-1; j++)
