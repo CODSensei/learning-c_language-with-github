@@ -1,10 +1,19 @@
 #include<stdio.h>
-int main() {
-    float x=0.7;
-if (x<=0.7){
-printf("abc");
-printf("%lf",x);
+int printFib(int n) {
+    static int a=0,b=1,netm;
+    if (n>0){
+        netm=a+b;
+        a=b;
+        b=netm;
+        printf("%d",netm);
+        printFib(n-1);
+    }
 }
-else
-printf("def");
+int main() {
+    int n;
+    printf("\n Enter the number of terms \t");
+    scanf("%d",&n);
+    printf("\n0,1,");
+    printFib(n-2);
+    return 0;
 }
