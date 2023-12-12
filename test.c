@@ -1,19 +1,24 @@
 #include<stdio.h>
-int printFib(int n) {
-    static int a=0,b=1,netm;
-    if (n>0){
-        netm=a+b;
-        a=b;
-        b=netm;
-        printf("%d",netm);
-        printFib(n-1);
-    }
-}
 int main() {
-    int n;
-    printf("\n Enter the number of terms \t");
+    int n,c=0;
+    printf("\n Enter number\t");
     scanf("%d",&n);
-    printf("\n0,1,");
-    printFib(n-2);
-    return 0;
+    if (n==0||n==1)
+{
+    printf("0 and 1 not prime");
+
+}
+for (int i=1;i<=n;i++){
+    if (n%i==0)
+    
+    {
+        c++;
+    }
+
+}
+if (c==2)
+printf("number is prime");
+else
+printf("Number is not prime");
+return 0;
 }
